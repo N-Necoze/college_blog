@@ -12,6 +12,5 @@
 */
 
 Route::get('/', 'PostController@index');
-// 順番が逆だと動かない
-Route::get('/posts/create', 'PostController@create');
+Route::get('/posts/create', 'PostController@create');  // 順番が逆だと動かない
 Route::get('/posts/{post}', 'PostController@show');
