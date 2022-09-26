@@ -10,11 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('posts/index');
-});
-
 
 Route::get('/', 'PostController@index');
-
+Route::get('/posts/{post}', 'PostController@show');
 
