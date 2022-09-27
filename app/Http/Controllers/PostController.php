@@ -22,7 +22,7 @@ class PostController extends Controller
         return view('posts/create');
     }
 
-    public function store(PostRequest $request, Post $post)
+    public function store(PostRequest $request , Post $post)
     {
         //dd($request->all());
         $input = $request['post'];
