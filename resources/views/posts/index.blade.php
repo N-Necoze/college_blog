@@ -21,6 +21,11 @@
             </div>
             @endforeach
         </div>
+        <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post" style="display:inline">
+            @csrf
+            @method('DELETE')
+            <button type="submit">delete</button> 
+        </form>
         <div class='paginate'>
             {{ $posts->links() }}
         </div>
